@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundCommon"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".Admin.NewQuestionEntryActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/backT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_marginLeft="25dp"
+            android:textSize="17dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="#606060"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quizo Meter"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/colorPrimary"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="50dp"/>
+
+
+            <TextView
+                android:id="@+id/test_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Test"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="#606060"/>
+
+
+            <TextView
+                android:id="@+id/test_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Test"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:fontFamily="@font/poppins"
+                android:textColor="#606060"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Question"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="#606060"/>
+
+
+                <EditText
+                    android:id="@+id/question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bg"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="#606060"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <CheckBox
+                        android:id="@+id/a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_gravity="center"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/optiona"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext_bg"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="#606060"
+                            android:inputType="textCapSentences|textMultiLine"
+                            android:paddingRight="5dp"
+                            android:paddingTop="5dp"
+                            android:hint="Option A"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <CheckBox
+                        android:id="@+id/b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_gravity="center"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/optionb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext_bg"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="#606060"
+                            android:inputType="textCapSentences|textMultiLine"
+                            android:paddingRight="5dp"
+                            android:paddingTop="5dp"
+                            android:hint="Option B"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <CheckBox
+                        android:id="@+id/c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_gravity="center"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/optionc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext_bg"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="#606060"
+                            android:inputType="textCapSentences|textMultiLine"
+                            android:paddingRight="5dp"
+                            android:paddingTop="5dp"
+                            android:hint="Option C"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <CheckBox
+                        android:id="@+id/d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_gravity="center"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/optiond"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext_bg"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="#606060"
+                            android:inputType="textCapSentences|textMultiLine"
+                            android:paddingRight="5dp"
+                            android:paddingTop="5dp"
+                            android:hint="Option D"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="30dp">
+
+                    <Button
+                        android:id="@+id/addmore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_notok_bg"
+                        android:fontFamily="@font/poppins"
+                        android:text="Add More"
+                        android:textSize="16dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:textAllCaps="false"
+                        android:textColor="#49E6DD" />
+
+
+                    <Button
+                        android:id="@+id/ok"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_ok_bg"
+                        android:shadowColor="#49E6DD"
+                        android:textColor="#ffffff"
+                        android:text="Upload Questions"
+                        android:layout_marginTop="20dp"
+                        android:textAllCaps="false"
+                        android:textSize="16dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/poppins"/>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
